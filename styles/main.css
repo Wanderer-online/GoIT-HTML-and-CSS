@@ -1,0 +1,173 @@
+:root {
+  --main-text-color: #212121;
+  --main-active-color: #2196f3;
+  --white: #fff;
+  --secondary-text-color: #757575;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --button-active-color: #188ce8;
+  --main-border-color: #ececec;
+  --product-border-color:#EEEEEE;
+}
+
+.invisible {
+  visibility: hidden;
+}
+/*  */
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+  letter-spacing: 0.03rem;
+}
+
+.primary-header {
+  /* padding: 24px 215px;*/
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02rem;
+  background-color: var(--white);
+  padding: 24px 215px;
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.logo-text {
+  color: #000;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.logo-text-part {
+  color: var(--main-active-color);
+}
+
+.navigation-link:hover,
+.navigation-link:active,
+.navigation-link:focus,
+.navigation-link.link-active,
+.support-link:hover,
+.support-link:active,
+.support-link:focus {
+  color: var(--main-active-color);
+}
+
+.support-link {
+  color: var(--secondary-text-color);
+}
+/*  */
+.hero {
+  padding: 200px 452px;
+  background-color: var(--footer-background-color);
+  text-align: center;
+}
+.hero-title {
+  color: var(--white);
+  letter-spacing: 0.06rem;
+  line-height: 60px;
+  font-size: 44px;
+}
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.06rem;
+  line-height: 26px;
+  background-color: var(--secondary-background-color);
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+.button:active,
+.button:hover,
+.button:focus {
+  background-color: var(--main-active-color);
+  color: var(--white);
+}
+
+.hero-link {
+  background-color: var(--main-active-color);
+  color: var(--white);
+  line-height: 30px;
+  font-weight: 700;
+}
+.hero-link:active,
+.hero-link:hover,
+.hero-link:focus {
+  background-color: var(--button-active-color);
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.advantages-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.advantage {
+  color: var(--secondary-text-color);
+  line-height: 24px;
+}
+
+.section {
+  padding: 94px 215px 0 215px;
+  text-align: center;
+}
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+.team-member {
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+}
+.team-member-info {
+  padding: 30px 70px;
+}
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-member-job {
+  color: var(--secondary-text-color);
+}
+
+/*  */
+.filters {
+  padding: 94px 215px 50px 215px;
+}
+.products {
+}
+.product{
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  border: 1px solid var(--main-border-color);
+}
+
+/*  */
+
+.footer {
+  background-color: var(--footer-background-color);
+  padding: 60px 215px;
+}
+.footer .logo-text {
+  color: var(--white);
+}
+.footer-address {
+  padding-top: 20px;
+}
+.footer-address a {
+  line-height: 24px;
+  color: var(--white);
+  opacity: 60%;
+  font-style: normal;
+}
+.footer-address a:hover,
+.footer-address a:active,
+.footer-address a:focus {
+  opacity: 100%;
+}
