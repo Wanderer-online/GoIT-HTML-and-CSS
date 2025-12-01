@@ -10,6 +10,13 @@
   --product-border-color:#EEEEEE;
 }
 
+.list{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -66,7 +73,7 @@ body {
 .hero-title {
   color: var(--white);
   letter-spacing: 0.06rem;
-  line-height: 60px;
+  line-height: 1.36;
   font-size: 44px;
 }
 .button {
@@ -75,7 +82,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.06rem;
-  line-height: 26px;
+  line-height: 1.62;
   background-color: var(--secondary-background-color);
   font-family: "Roboto", sans-serif;
   border: none;
@@ -85,12 +92,13 @@ body {
 .button:focus {
   background-color: var(--main-active-color);
   color: var(--white);
+  cursor: pointer;
 }
 
 .hero-link {
   background-color: var(--main-active-color);
   color: var(--white);
-  line-height: 30px;
+  line-height: 1.87;
   font-weight: 700;
 }
 .hero-link:active,
@@ -111,7 +119,7 @@ body {
 }
 .advantage {
   color: var(--secondary-text-color);
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 .section {
@@ -161,7 +169,7 @@ body {
   padding-top: 20px;
 }
 .footer-address a {
-  line-height: 24px;
+  line-height: 1.71;
   color: var(--white);
   opacity: 60%;
   font-style: normal;

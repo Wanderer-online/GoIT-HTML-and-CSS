@@ -4,36 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <!--  -->
     <header class="primary-header">
       <div class="logo">
-        <a href="./" class="logo-text"><span class="logo-text-part">Web</span>Studio</a>
+        <a href="./" class="logo-text link"
+          ><span class="logo-text-part">Web</span>Studio</a
+        >
       </div>
       <nav class="navigation">
-        <ul>
-          <li><a href="./" class="navigation-link link-active">Студія</a></li>
-          <li><a href="./portfolio.html" class="navigation-link">Портфоліо</a></li>
-          <li><a href="" class="navigation-link">Контакти</a></li>
+        <ul class="list">
+          <li><a href="./" class="navigation-link link-active link">Студія</a></li>
+          <li>
+            <a href="./portfolio.html" class="navigation-link link">Портфоліо</a>
+          </li>
+          <li><a href="" class="navigation-link link">Контакти</a></li>
         </ul>
       </nav>
       <div class="support">
-        <ul>
+        <ul class="list">
           <li>
             <a href="mailto:info@devstudio.com" class="support-link"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="support-link"
+            <a href="tel:+380961111111" class="support-link link"
               >+38 096 111 11 11</a
             >
           </li>
@@ -44,43 +49,43 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <a href="" class="hero-link button ">Замовити послугу</a>
+        <a href="" class="hero-link button link">Замовити послугу</a>
       </section>
       <section class="section">
         <h2 class="invisible">Наші переваги</h2>
-          <ul>
-            <li>
-              <h3 class="advantages-title">Увага до деталей</h3>
-              <p class="advantage">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-title">Пунктуальність</h3>
-              <p class="advantage">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-title">Планування</h3>
-              <p class="advantage">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-title">Сучасні технології</h3>
-              <p class="advantage">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
-          </section>
+        <ul class="list">
+          <li>
+            <h3 class="advantages-title">Увага до деталей</h3>
+            <p class="advantage">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li>
+            <h3 class="advantages-title">Пунктуальність</h3>
+            <p class="advantage">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li>
+            <h3 class="advantages-title">Планування</h3>
+            <p class="advantage">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li>
+            <h3 class="advantages-title">Сучасні технології</h3>
+            <p class="advantage">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </section>
       <section class="section">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/do-1.jpg"
@@ -109,7 +114,7 @@
       </section>
       <section class="section team-section">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="team">
+        <ul class="team list">
           <li class="team-member">
             <img
               src="./images/ihor.jpg"
@@ -164,20 +169,22 @@
     <!--  -->
     <footer class="footer">
       <div class="logo">
-        <a href="./" class="logo-text"><span class="logo-text-part">Web</span>Studio</a>
+        <a href="./" class="logo-text link"
+          ><span class="logo-text-part">Web</span>Studio</a
+        >
       </div>
       <address class="footer-address">
-        <ul>
+        <ul class="list">
           <li>
             <a
               href="https://maps.app.goo.gl/yUVDSzYmyYtK6nQ5A"
               target="_blank"
               rel="noreferrer noopener"
-              >м. Київ, пр-т Лесі Українки, 26</a
+              class="link">м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
