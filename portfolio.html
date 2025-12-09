@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Потім ваші стилі -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +22,7 @@
   <body>
     <!--  -->
     <header class="primary-header">
-      <div class="logo">
+      <div class="container"><div class="logo">
         <a href="./" class="logo-text link"
           ><span class="logo-text-part">Web</span>Studio</a
         >
@@ -45,11 +51,11 @@
             >
           </li>
         </ul>
-      </div>
+      </div></div>
     </header>
     <!--  -->
     <main>
-      <section class="filters">
+      <section class="filters section"><div class="container">
         <h2 class="invisible">Фільтри</h2>
         <ul class="list">
           <li><button type="button" class="button">Усі</button></li>
@@ -59,73 +65,80 @@
           <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
       </section>
-      <section class="products">
+      <section class="products section"><div class="container">
         <ul class="list">
           <li class="product">
             <img src="./images/products/product_1-min.png" alt="Технокряк" />
-            <h3 class="product-title">Технокряк</h3>
-            <p class="product-type">Веб-сайт</p>
+            <div class="product-info"><h3 class="product-title">Технокряк</h3>
+            <p class="product-type">Веб-сайт</p></div>
           </li>
           <li class="product">
             <img
               src="./images/products/product_2-min.png"
               alt="Постер New Orlean vs Golden Star"
             />
-            <h3 class="product-title">Постер New Orlean vs Golden Star</h3>
-            <p class="product-type">Дизайн</p>
+            <div class="product-info"><h3 class="product-title">Постер New Orlean vs Golden Star</h3>
+            <p class="product-type">Дизайн</p></div>
           </li>
           <li class="product">
             <img
               src="./images/products/product_3-min.png"
               alt="Ресторан Seafood"
             />
+            <div class="product-info">
             <h3 class="product-title">Ресторан Seafood</h3>
-            <p class="product-type">Додаток</p>
+            <p class="product-type">Додаток</p></div>
           </li>
           <li class="product">
             <img src="./images/products/product_4-min.png" alt="Проєкт Prime" />
+            <div class="product-info">
             <h3 class="product-title">Проєкт Prime</h3>
-            <p class="product-type">Маркетинг</p>
+            <p class="product-type">Маркетинг</p></div>
           </li>
           <li class="product">
             <img src="./images/products/product_5-min.png" alt="Проєкт Boxes" />
+            <div class="product-info">
             <h3 class="product-title">Проєкт Boxes</h3>
-            <p class="product-type">Додаток</p>
+            <p class="product-type">Додаток</p></div>
           </li>
           <li class="product">
             <img
               src="./images/products/product_6-min.png"
               alt="Inspiration has no Borders"
             />
+            <div class="product-info">
             <h3 class="product-title">Inspiration has no Borders</h3>
-            <p class="product-type">Веб-сайт</p>
+            <p class="product-type">Веб-сайт</p></div>
           </li>
           <li class="product">
             <img
               src="./images/products/product_7-min.png"
               alt="Видання Limited Edition"
             />
+            <div class="product-info">
             <h3 class="product-title">Видання Limited Edition</h3>
-            <p class="product-type">Дизайн</p>
+            <p class="product-type">Дизайн</p></div>
           </li>
           <li class="product">
             <img src="./images/products/product_8-min.png" alt="Проєкт LAB" />
+            <div class="product-info">
             <h3 class="product-title">Проєкт LAB</h3>
-            <p class="product-type">Маркетинг</p>
+            <p class="product-type">Маркетинг</p></div>
           </li>
           <li class="product">
             <img
               src="./images/products/product_9-min.png"
               alt="Growing Business"
             />
+            <div class="product-info">
             <h3 class="product-title">Growing Business</h3>
-            <p class="product-type">Додаток</p>
+            <p class="product-type">Додаток</p></div>
           </li>
         </ul>
       </section>
     </main>
     <!--  -->
-    <footer class="footer">
+    <footer class="footer"><div class="container">
       <div class="logo">
         <a href="./" class="logo-text link"
           ><span class="logo-text-part">Web</span>Studio</a
@@ -138,13 +151,20 @@
               href="https://maps.app.goo.gl/yUVDSzYmyYtK6nQ5A"
               target="_blank"
               rel="noreferrer noopener"
-              class="link">м. Київ, пр-т Лесі Українки, 26</a
+              class="link"
+              >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </address>
+      </address></div>
     </footer>
   </body>
 </html>

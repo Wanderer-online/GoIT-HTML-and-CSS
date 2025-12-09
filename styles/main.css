@@ -7,20 +7,24 @@
   --footer-background-color: #2f303a;
   --button-active-color: #188ce8;
   --main-border-color: #ececec;
-  --product-border-color:#EEEEEE;
+  --product-border-color: #eeeeee;
 }
 
-.list{
+.list {
   list-style: none;
+  padding: 0;
 }
-.link{
+.link {
   text-decoration: none;
 }
 
 .invisible {
+  display: none;
   visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
-/*  */
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -28,15 +32,16 @@ body {
   font-style: normal;
   color: var(--main-text-color);
   letter-spacing: 0.03rem;
+  color: var(--main-text-color);
 }
-
+/*  ------- header styles -------  */
 .primary-header {
-  /* padding: 24px 215px;*/
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02rem;
   background-color: var(--white);
-  padding: 24px 215px;
   border-bottom: 1px solid var(--main-border-color);
 }
 
@@ -51,6 +56,9 @@ body {
   color: var(--main-active-color);
 }
 
+.support > ul {
+  margin: 0;
+}
 .navigation-link:hover,
 .navigation-link:active,
 .navigation-link:focus,
@@ -64,9 +72,16 @@ body {
 .support-link {
   color: var(--secondary-text-color);
 }
-/*  */
+/* ------- general styles  ------- */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero {
-  padding: 200px 452px;
+  padding-top: 200px;
   background-color: var(--footer-background-color);
   text-align: center;
 }
@@ -75,10 +90,12 @@ body {
   letter-spacing: 0.06rem;
   line-height: 1.36;
   font-size: 44px;
+  margin-top: 200px;
 }
 .button {
+  box-sizing: border-box;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 14px 32px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.06rem;
@@ -100,6 +117,7 @@ body {
   color: var(--white);
   line-height: 1.87;
   font-weight: 700;
+  margin-top: 30px;
 }
 .hero-link:active,
 .hero-link:hover,
@@ -110,25 +128,29 @@ body {
 .section-title {
   font-size: 36px;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .advantages-title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
 }
 .advantage {
   color: var(--secondary-text-color);
   line-height: 1.71;
+  margin-top: 10px;
 }
 
 .section {
-  padding: 94px 215px 0 215px;
+  padding-top: 94px;
   text-align: center;
 }
 .team-section {
   background-color: var(--secondary-background-color);
 }
+
 .team-member {
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
@@ -144,23 +166,31 @@ body {
   color: var(--secondary-text-color);
 }
 
-/*  */
+/* ------- portfolio page styles  ------- */
 .filters {
-  padding: 94px 215px 50px 215px;
+  padding-top: 94px;
 }
 .products {
 }
-.product{
+.product {
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
   border: 1px solid var(--main-border-color);
 }
 
-/*  */
+.product-info {
+  margin: 20px 24px;
+}
+.product-type {
+  color: var(--secondary-text-color);
+}
+
+/* ------- footer styles  ------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
-  padding: 60px 215px;
 }
 .footer .logo-text {
   color: var(--white);
