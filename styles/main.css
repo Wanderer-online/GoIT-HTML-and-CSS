@@ -251,8 +251,8 @@ body {
   background-color: var(--white);
   /* border-radius: 0 0 4px 4px; */
   border: 1px solid var(--main-border-color);
-  max-width: 370px;
-
+    max-width: calc((100% - 90px) / 3);
+/* 90 а не 60 тому що у останнього елементу є відступи справа */
 
 }
 
