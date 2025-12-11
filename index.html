@@ -22,74 +22,75 @@
   <body>
     <!--  -->
     <header class="primary-header">
-      <div class="container">
+      <div class="container primary-header-wrapper">
         <div class="logo">
           <a href="./" class="logo-text link"
             ><span class="logo-text-part">Web</span>Studio</a
           >
         </div>
         <nav class="navigation">
-          <ul class="list">
-            <li>
+          <ul class="list header-list-wrapper">
+            <li class="header-list-item">
               <a href="./" class="navigation-link link-active link">Студія</a>
             </li>
-            <li>
+            <li class="header-list-item">
               <a href="./portfolio.html" class="navigation-link link"
                 >Портфоліо</a
               >
             </li>
-            <li><a href="" class="navigation-link link">Контакти</a></li>
+            <li class="header-list-item">
+              <a href="" class="navigation-link link">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <div class="support">
-          <ul class="list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="support-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="support-link link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+
+        <ul class="list support header-list-wrapper">
+          <li class="header-list-item">
+            <a href="mailto:info@devstudio.com" class="support-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-list-item">
+            <a href="tel:+380961111111" class="support-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <!--  -->
-    <main>
+    <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
           <a href="" class="hero-link button link">Замовити послугу</a>
         </div>
       </section>
-      <section class="section">
+      <section class="section advantages-section">
         <div class="container">
           <h2 class="invisible">Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-list-container">
+            <li class="flex-list-item">
               <h3 class="advantages-title">Увага до деталей</h3>
               <p class="advantage">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="flex-list-item">
               <h3 class="advantages-title">Пунктуальність</h3>
               <p class="advantage">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="flex-list-item">
               <h3 class="advantages-title">Планування</h3>
               <p class="advantage">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="flex-list-item">
               <h3 class="advantages-title">Сучасні технології</h3>
               <p class="advantage">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -102,8 +103,8 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-list-container flex-wrap">
+            <li class="flex-list-item">
               <img
                 src="./images/do-1.jpg"
                 alt="development"
@@ -111,7 +112,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="flex-list-item">
               <img
                 src="./images/do-2.jpg"
                 alt="responsive design"
@@ -119,7 +120,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="flex-list-item">
               <img
                 src="./images/do-3.jpg"
                 alt="design"
@@ -133,8 +134,8 @@
       <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team list">
-            <li class="team-member">
+          <ul class="team list flex-list-container flex-wrap">
+            <li class="team-member flex-list-item">
               <img
                 src="./images/ihor.jpg"
                 alt="Ігор Дем'яненко"
@@ -146,7 +147,7 @@
                 <p lang="en" class="team-member-job">Product Designer</p>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-member flex-list-item">
               <img
                 src="./images/olga.jpg"
                 alt="Ольга Рєпіна"
@@ -158,7 +159,7 @@
                 <p lang="en" class="team-member-job">Frontend Developer</p>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-member flex-list-item">
               <img
                 src="./images/nick.jpg"
                 alt="Микола Тарасов"
@@ -170,7 +171,7 @@
                 <p lang="en" class="team-member-job">Marketing</p>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-member flex-list-item">
               <img
                 src="./images/mick.jpg"
                 alt="Михайло Єрмаков"
@@ -182,6 +183,7 @@
                 <p lang="en" class="team-member-job">UI Designer</p>
               </div>
             </li>
+
           </ul>
         </div>
       </section>
