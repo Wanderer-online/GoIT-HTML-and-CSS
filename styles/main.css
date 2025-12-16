@@ -110,6 +110,22 @@ body {
   color: var(--main-active-color);
 }
 
+.navigation-link.link-active {
+  position: relative;
+}
+.navigation-link.link-active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--main-active-color);
+  left: 0;
+  border-radius: 2px;
+  bottom: 0;
+  bottom: -40px;
+}
+
 .support {
   margin-left: auto;
 }
@@ -240,6 +256,28 @@ body {
 .advantages-section {
   padding-bottom: 0;
 }
+
+.do {
+  position: relative;
+}
+.image-label {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0;
+  left: 0;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: rgb(48, 49, 59, 80%);
+}
+
 .team-section {
   background-color: var(--secondary-background-color);
 }
@@ -348,7 +386,7 @@ body {
 }
 
 .product-info {
-  margin: 20px 24px;
+  padding: 20px 24px;
   text-align: left;
 }
 .product-type {
@@ -362,6 +400,32 @@ body {
   letter-spacing: 0.06rem;
   font-size: 18px;
   line-height: 2;
+}
+.product-image-wrapper {
+  position: relative;
+}
+.product-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  background-color: rgb(33, 150, 243, 90%);
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white);
+  text-align: left;
+  font-weight: 400;
+}
+
+.product a:hover .product-description {
+  opacity: 1;
 }
 /* ------- footer styles  ------- */
 
@@ -414,4 +478,56 @@ body {
 .footer .social-item {
   background-color: rgb(255, 255, 255, 10%);
   color: var(--white);
+}
+/* modal */
+.modal {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 20%);
+}
+.modal-window-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  pointer-events: all;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close-button {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 0;
+
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+}
+.close-button svg{
+  fill:currentColor;
+  display: block;
+  margin: 0;
+
+}
+.close-button:hover {
+  background-color:var(--button-active-color);
+  color:var(--white)
 }

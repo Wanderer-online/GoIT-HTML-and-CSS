@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .menu-list-item a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+      }
+      .menu-list-item {
+        position: relative;
+      }
+      .menu-list > li {
+        background-color: rgb(53, 52, 52);
+        color: rgb(0, 255, 128);
+        border: 1px solid rgb(0, 255, 128);
+      }
+      .hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .sub-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .menu-list-item:hover .sub-list {
+        z-index: 2;
+        opacity: 1;
+        pointer-events: all;
+      }
+      .menu-list-item:hover {
+        background-color: rgb(11, 173, 60);
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu-list">
+      <li class="menu-list-item">
+        <a href="">link 1</a>
+        <ul class="menu-list sub-list hidden">
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;1</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;2</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;3</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;4</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;5</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-list-item">
+        <a href="">link 2</a>
+        <ul class="menu-list sub-list hidden">
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;1</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;2</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;3</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;4</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;5</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-list-item">
+        <a href="">link 3</a>
+        <ul class="menu-list sub-list hidden">
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;1</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;2</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;3</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;4</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;5</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-list-item">
+        <a href="">link 4</a>
+        <ul class="menu-list sub-list hidden">
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;1</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;2</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;3</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;4</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;5</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-list-item">
+        <a href="">link 5</a>
+        <ul class="menu-list sub-list hidden">
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;1</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;2</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;3</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;4</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">sub&nbsp;link&nbsp;5</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>При создании меню + подменю обычно делается список ссылок. Каждый элемент списка помимо ссылки содержит вложенный список ссылок - подменю (не в ссылке, а в li)
+    </p>
+    <p>Каждое подменю скрывается по умолчанию, и показывается только при hover на элемент родительского меню, который его содержит. Позиционируется он тоже относительно родительского элемента меню.</p>
+  </body>
+</html>
