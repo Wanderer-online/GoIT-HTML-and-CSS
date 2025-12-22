@@ -480,6 +480,8 @@
                 id="subscribe-email"
                 class="subscribe-email"
                 placeholder=" "
+                title="your_email@mail.com"
+                required
               />
               <label for="subscribe-email" class="subscribe-label"
                 >E-mail</label
@@ -508,7 +510,7 @@
         </button>
 
         <form action="" class="modal-content">
-          <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+          <strong class="modal-callout">Залиште свої дані, ми вам передзвонимо</strong>
           <ul class="list modal-inputs">
             <li>
               <label class="modal-field">
@@ -551,7 +553,7 @@
           </ul>
 
             <label class="modal-check-label">
-              <input type="checkbox" name="consent" class="modal-checkbox visually-hidden" required/>
+              <input type="checkbox" name="consent" class="modal-checkbox visually-hidden"  value="true" required/>
               <svg class="check-icon svg-icon" width="16" height="15">
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
@@ -566,5 +568,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/form-to-console.js"></script>
   </body>
 </html>

@@ -545,7 +545,7 @@ body {
 .subscribe-label {
   pointer-events: none;
   position: absolute;
-  transform: translate(1.06rem, 100%);
+  transform: translate(1.06rem, 110%);
 
   /* left: 1.06rem; */
 
@@ -555,7 +555,7 @@ body {
 }
 .subscribe-email {
   width: 358px;
-  padding: 0;
+  padding: 16px;
   font-size: 16px;
 
   background-color: transparent;
@@ -669,7 +669,7 @@ body {
   text-align: center;
 }
 
-.modal-title {
+.modal-callout {
 font-weight: 700;
 font-size: 20px;
 letter-spacing: 0.03rem;
@@ -681,7 +681,7 @@ letter-spacing: 0.03rem;
   align-items: stretch;
   text-align: left;
 
-  margin-top: 12px;
+  margin: 12px 0 0 0;
 }
 
 .modal-field,
@@ -749,9 +749,9 @@ transition: fill var(--trs-timing-function) var(--trs-duration);
 
 
 .modal-check-label{
-  display: flex;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
-
   color:var(--secondary-text-color);
   margin-top: 20px;
 }
@@ -760,12 +760,23 @@ transition: fill var(--trs-timing-function) var(--trs-duration);
   margin-right: 5px;
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
+  cursor: pointer;
 
   background-color: transparent;
 
+  outline: 1px solid transparent;
+
   fill:transparent;
 
-  transition: fill var(--trs-timing-function) var(--trs-duration), background-color var(--trs-timing-function) var(--trs-duration);
+  transition: fill var(--trs-timing-function) var(--trs-duration), background-color var(--trs-timing-function) var(--trs-duration),
+  outline var(--trs-timing-function) var(--trs-duration),
+  border-color var(--trs-timing-function) var(--trs-duration);
+}
+
+.modal-checkbox{
+  visibility: visible;
+  bottom: 0;
+  left: 0.5rem;
 }
 
 .modal-checkbox:checked + .check-icon{
@@ -773,3 +784,15 @@ transition: fill var(--trs-timing-function) var(--trs-duration);
   background-color: var(--main-active-color);
   border: none;
 }
+
+.modal-checkbox:focus ~ .check-icon,
+.modal-checkbox:active ~ .check-icon{
+outline-color: var(--main-active-color);
+border-color: var(--main-active-color);
+}
+
+/* Це краще робити у JS */
+/* .modal-input:invalid,
+.modal-check-label:has(.modal-checkbox:invalid){
+  outline: 1px solid red;
+} */
