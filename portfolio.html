@@ -28,43 +28,63 @@
             ><span class="logo-text-part">Web</span>Studio</a
           >
         </div>
-        <nav class="navigation">
-          <ul class="list header-list-wrapper">
+
+        <div class="menu-wrapper" id="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="list header-list-wrapper">
+              <li class="header-list-item">
+                <a href="./" class="navigation-link  link">Студія</a>
+              </li>
+              <li class="header-list-item">
+                <a href="./portfolio.html" class="navigation-link link-active link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a href="" class="navigation-link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list support header-list-wrapper">
             <li class="header-list-item">
-              <a href="./" class="navigation-link link">Студія</a>
-            </li>
-            <li class="header-list-item">
-              <a
-                href="./portfolio.html"
-                class="navigation-link link link-active"
-                >Портфоліо</a
+              <a href="mailto:info@devstudio.com" class="support-link">
+                <svg width="16" height="12" class="svg-icon">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
+
             <li class="header-list-item">
-              <a href="" class="navigation-link link">Контакти</a>
+              <a href="tel:+380961111111" class="support-link link phone">
+                <svg width="10" height="16" class="svg-icon">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
+          <ul class="header-menu-social list">
+            <li class="header-list-item"><a href="" class="link header-social-link">Instagram</a></li>
+            <li class="header-list-item"><a href="" class="link header-social-link">Twitter</a></li>
+            <li class="header-list-item"><a href="" class="link header-social-link">Facebook</a></li>
+            <li class="header-list-item"><a href="" class="link header-social-link">LinkedIn</a></li>
 
-        <ul class="list support header-list-wrapper">
-          <li class="header-list-item">
-            <a href="mailto:info@devstudio.com" class="support-link">
-              <svg width="16" height="12" class="svg-icon">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="header-list-item">
-            <a href="tel:+380961111111" class="support-link link">
-              <svg width="10" height="16" class="svg-icon">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="mobile-menu-button"
+          aria-label="Перемикач мобільного меню"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" class="svg-icon ">
+            <use href="./images/symbol-defs.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/symbol-defs.svg#icon-menu-close" class="icon-menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--  -->
@@ -82,7 +102,7 @@
         </div>
 
         <div class="container">
-          <ul class="list flex-list-container flex-wrap">
+          <ul class="list flex-list-container flex-wrap products-container">
             <li class="product flex-list-item">
               <a href="">
                 <div class="product-image-wrapper">
@@ -291,7 +311,7 @@
     <footer class="footer">
       <div class="container">
         <ul class="list footer-columns">
-          <li>
+          <li class="footer-column">
             <div class="logo">
               <a href="./" class="logo-text link"
                 ><span class="logo-text-part">Web</span>Studio</a
@@ -319,7 +339,7 @@
               </ul>
             </address>
           </li>
-          <li>
+          <li class="footer-column">
             <h3 class="footer-title">Приєднуйтесь</h3>
             <ul class="social list">
               <li>
@@ -356,15 +376,17 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="footer-column">
             <h3 class="footer-title">Підпишіться на розсилку</h3>
             <form class="subscribe">
               <input
                 type="email"
                 name="email"
                 id="subscribe-email"
-                class="subscribe-email "
+                class="subscribe-email"
                 placeholder=" "
+                title="your_email@mail.com"
+                required
               />
               <label for="subscribe-email" class="subscribe-label"
                 >E-mail</label
@@ -383,6 +405,83 @@
         </ul>
       </div>
     </footer>
+<!--  -->
+<div class="modal modal-hidden" data-modal>
+      <div class="modal-window-area">
+        <button class="close-button" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form action="" class="modal-content">
+          <strong class="modal-callout"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <ul class="list modal-inputs">
+            <li>
+              <label class="modal-field">
+                <span class="modal-label">Ім'я</span>
+                <input type="text" name="name" class="modal-input" required />
+                <svg class="modal-icon svg-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </label>
+            </li>
+            <li>
+              <label class="modal-field">
+                <span class="modal-label"> Телефон</span>
+                <input type="tel" name="phone" class="modal-input" required />
+                <svg class="modal-icon svg-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </label>
+            </li>
+            <li>
+              <label class="modal-field">
+                <span class="modal-label">Пошта</span>
+                <input type="email" name="email" class="modal-input" required />
+                <svg class="modal-icon svg-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </label>
+            </li>
+            <li>
+              <label class="modal-label">Коментар</label>
+              <textarea
+                name="message"
+                class="modal-input text-area"
+                placeholder="Введіть текст"
+                rows="5"
+                spellcheck="true"
+              ></textarea>
+            </li>
+          </ul>
+
+          <label class="modal-check-label">
+            <input
+              type="checkbox"
+              name="consent"
+              class="modal-checkbox visually-hidden"
+              value="true"
+              required
+            />
+            <svg class="check-icon svg-icon" width="16" height="15">
+              <use href="./images/symbol-defs.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp;
+            <a href="" class="decorated-link">Умови договору</a></label
+          >
+
+          <button type="submit" class="button primary-button submit-button">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/form-to-console.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>
