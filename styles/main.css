@@ -102,6 +102,9 @@ body {
   color: var(--main-active-color);
 }
 
+.support {
+  display: flex;
+}
 .support > ul {
   margin: 0;
 }
@@ -131,10 +134,6 @@ body {
 
 .navigation-link.link-active {
   position: relative;
-}
-
-.support {
-  /* margin-left: auto; */
 }
 
 .support-link {
@@ -839,7 +838,6 @@ body {
   }
   .support {
     margin-top: auto;
-    display: flex;
     flex-direction: column-reverse;
     font-size: 24px;
   }
@@ -868,6 +866,7 @@ body {
 
   .header-menu-social {
     display: flex;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.222;
@@ -920,11 +919,6 @@ body {
   .filters-list .button {
     margin-top: 15px;
   }
-  .products-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
 
   /* footer */
   .footer-columns {
@@ -963,7 +957,7 @@ body {
     margin-bottom: 8px;
   }
   /* modal */
-  .modal-window-area{
+  .modal-window-area {
     width: 450px;
     height: 609px;
   }
@@ -973,14 +967,10 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* header */
   .support {
-    display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-right: 0;
   }
-  .support .header-list-item{
-    margin-right: 0;
-  }
+
   /* main */
   .team-member img {
     max-width: 354px;
@@ -1002,9 +992,12 @@ body {
   .filters-list {
     margin-bottom: 30px;
   }
+  .products-container {
+    grid-template-columns: auto auto;
+  }
   .product {
-    max-width: calc((100% - 60px) / 2);
-    /* 90 а не 60 тому що у останнього елементу є відступи справа */
+    width: 354px;
+
   }
   /* footer */
   .footer-columns {
@@ -1037,12 +1030,9 @@ body {
   }
   .header-list-wrapper {
     display: flex;
-    margin-right: -50px;
+    gap: 50px;
   }
 
-  .header-list-item {
-    margin-right: 50px;
-  }
   /*  */
   .mobile-menu-button {
     display: none;
@@ -1094,6 +1084,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .products-container {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 /* desktop */
@@ -1118,7 +1114,9 @@ body {
   }
 
   /* header */
-
+  .support {
+    gap: 30px;
+  }
   /* main */
   .hero .container {
     padding-top: 200px;
@@ -1152,9 +1150,11 @@ body {
   }
 
   /* portfolio page */
+  .products-container {
+
+    grid-template-columns: auto auto auto;}
   .product {
-    max-width: calc((100% - 90px) / 3);
-    /* 90 а не 60 тому що у останнього елементу є відступи справа */
+
   }
   .filters-list {
     margin-bottom: 50px;
