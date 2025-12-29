@@ -961,6 +961,11 @@ body {
   .footer-address li:not(:last-child) {
     margin-bottom: 8px;
   }
+  /* modal */
+  .modal-window-area{
+    width: 450px;
+    height: 609px;
+  }
 }
 
 /* tablet only */
