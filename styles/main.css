@@ -67,6 +67,7 @@ body {
   color: var(--main-text-color);
   letter-spacing: 0.03rem;
   color: var(--main-text-color);
+  overflow-x: hidden;
 }
 
 /*  ------- header styles -------  */
@@ -975,6 +976,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-right: 0;
+  }
+  .support .header-list-item{
+    margin-right: 0;
   }
   /* main */
   .team-member img {
@@ -1016,13 +1021,10 @@ body {
   /* general styles */
   .flex-list-container {
     display: flex;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    justify-content: center;
+    gap: 30px;
   }
-  .flex-list-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
+
   .flex-wrap {
     flex-wrap: wrap;
   }
