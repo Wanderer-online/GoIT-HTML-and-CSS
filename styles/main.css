@@ -1079,11 +1079,14 @@ body {
   .team-member {
     max-width: 354px;
   }
+  .subscribe-email {
+    width: 358px;
+  }
   /* portfolio page */
-}
-.filters-list {
-  justify-content: center;
-  flex-wrap: wrap;
+  .filters-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* desktop */
@@ -1159,9 +1162,6 @@ body {
   .footer-title {
     text-align: left;
   }
-  .subscribe-email {
-    max-width: 358px;
-  }
 }
 
 /* IMAGES */
@@ -1174,7 +1174,7 @@ body {
         rgba(47, 48, 58, 0.4) 100%
       ),
       url("../images/header-480-min.jpg");
-      background-size:480px;
+    background-size: 480px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1198,19 +1198,19 @@ body {
         rgba(47, 48, 58, 0.4) 100%
       ),
       url("../images/header-768-min.jpg");
-      background-size:768px;
+    background-size: 768px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      .hero {
-    background-image: linear-gradient(
-        0,
-        rgba(47, 48, 58, 0.4) 0%,
-        rgba(47, 48, 58, 0.4) 100%
-      ),
-      url("../images/header-768@2x-min.jpg");
-  }
+    .hero {
+      background-image: linear-gradient(
+          0,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/header-768@2x-min.jpg");
+    }
   }
 }
 /* desktop */
@@ -1222,19 +1222,19 @@ body {
         rgba(47, 48, 58, 0.4) 100%
       ),
       url("../images/header-1600-min.jpg");
-      background-size:1600px;
+    background-size: 1600px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      .hero {
-    background-image: linear-gradient(
-        0,
-        rgba(47, 48, 58, 0.4) 0%,
-        rgba(47, 48, 58, 0.4) 100%
-      ),
-      url("../images/header-1600@2x-min.jpg");
-  }
+    .hero {
+      background-image: linear-gradient(
+          0,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/header-1600@2x-min.jpg");
+    }
   }
 }
 
