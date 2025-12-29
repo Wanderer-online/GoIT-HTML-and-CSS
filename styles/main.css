@@ -684,6 +684,7 @@ body {
 .modal-content {
   padding: 40px;
   text-align: center;
+  font-size: 12px;
 }
 
 .modal-callout {
@@ -748,7 +749,9 @@ body {
 }
 .modal-label {
   color: var(--secondary-text-color);
-  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 4px;
+  /* font-size: 12px; */
 }
 .modal-icon {
   position: absolute;
@@ -1172,6 +1175,11 @@ body {
   }
   .footer-title {
     text-align: left;
+  }
+
+  /* modal */
+  .modal-check-label{
+    font-size: 14px;
   }
 }
 
