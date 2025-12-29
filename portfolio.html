@@ -33,10 +33,12 @@
           <nav class="navigation">
             <ul class="list header-list-wrapper">
               <li class="header-list-item">
-                <a href="./" class="navigation-link  link">Студія</a>
+                <a href="./" class="navigation-link link">Студія</a>
               </li>
               <li class="header-list-item">
-                <a href="./portfolio.html" class="navigation-link link-active link"
+                <a
+                  href="./portfolio.html"
+                  class="navigation-link link-active link"
                   >Портфоліо</a
                 >
               </li>
@@ -66,11 +68,18 @@
             </li>
           </ul>
           <ul class="header-menu-social list">
-            <li class="header-list-item"><a href="" class="link header-social-link">Instagram</a></li>
-            <li class="header-list-item"><a href="" class="link header-social-link">Twitter</a></li>
-            <li class="header-list-item"><a href="" class="link header-social-link">Facebook</a></li>
-            <li class="header-list-item"><a href="" class="link header-social-link">LinkedIn</a></li>
-
+            <li class="header-list-item">
+              <a href="" class="link header-social-link">Instagram</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="link header-social-link">Twitter</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="link header-social-link">Facebook</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="link header-social-link">LinkedIn</a>
+            </li>
           </ul>
         </div>
         <button
@@ -80,9 +89,15 @@
           aria-controls="menu-container"
           data-menu-button
         >
-          <svg width="40" height="40" class="svg-icon ">
-            <use href="./images/symbol-defs.svg#icon-menu" class="icon-menu"></use>
-            <use href="./images/symbol-defs.svg#icon-menu-close" class="icon-menu-close"></use>
+          <svg width="40" height="40" class="svg-icon">
+            <use
+              href="./images/symbol-defs.svg#icon-menu"
+              class="icon-menu"
+            ></use>
+            <use
+              href="./images/symbol-defs.svg#icon-menu-close"
+              class="icon-menu-close"
+            ></use>
           </svg>
         </button>
       </div>
@@ -106,10 +121,28 @@
             <li class="product flex-list-item">
               <a href="">
                 <div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_1-min.png"
-                    alt="Технокряк"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-0-480-min.jpg    1x,
+                        ./images/products/product-0-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-0-min.jpg    1x,
+                        ./images/products/product-0@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-0-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -128,10 +161,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_2-min.png"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-1-480-min.jpg    1x,
+                        ./images/products/product-1-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-1-min.jpg    1x,
+                        ./images/products/product-1@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-1-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -152,10 +203,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_3-min.png"
-                    alt="Ресторан Seafood"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-2-480-min.jpg    1x,
+                        ./images/products/product-2-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-2-min.jpg    1x,
+                        ./images/products/product-2@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-2-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -174,10 +243,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_4-min.png"
-                    alt="Проєкт Prime"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-3-480-min.jpg    1x,
+                        ./images/products/product-3-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-3-min.jpg    1x,
+                        ./images/products/product-3@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-3-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Проєкт Prime"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -196,10 +283,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_5-min.png"
-                    alt="Проєкт Boxes"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-4-480-min.jpg    1x,
+                        ./images/products/product-4-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-4-min.jpg    1x,
+                        ./images/products/product-4@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-4-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Проєкт Boxes"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -218,10 +323,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_6-min.png"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-5-480-min.jpg    1x,
+                        ./images/products/product-5-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-5-min.jpg    1x,
+                        ./images/products/product-5@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-5-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -240,10 +363,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_7-min.png"
-                    alt="Видання Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-6-480-min.jpg    1x,
+                        ./images/products/product-6-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-6-min.jpg    1x,
+                        ./images/products/product-6@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-6-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -262,10 +403,28 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_8-min.png"
-                    alt="Проєкт LAB"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-7-480-min.jpg    1x,
+                        ./images/products/product-7-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-7-min.jpg    1x,
+                        ./images/products/product-7@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-7-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Проєкт LAB"
+                    />
+                  </picture>
+
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -284,10 +443,27 @@
             <li class="product flex-list-item">
               <a href=""
                 ><div class="product-image-wrapper">
-                  <img
-                    src="./images/products/product_9-min.png"
-                    alt="Growing Business"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/products/product-8-480-min.jpg    1x,
+                        ./images/products/product-8-480@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/products/product-8-min.jpg    1x,
+                        ./images/products/product-8@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/products/product-8-min.jpg"
+                      sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="product-description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -405,8 +581,8 @@
         </ul>
       </div>
     </footer>
-<!--  -->
-<div class="modal modal-hidden" data-modal>
+    <!--  -->
+    <div class="modal modal-hidden" data-modal>
       <div class="modal-window-area">
         <button class="close-button" data-modal-close>
           <svg width="18" height="18">
@@ -482,6 +658,5 @@
     <script src="./js/modal.js"></script>
     <script src="./js/form-to-console.js"></script>
     <script src="./js/menu.js"></script>
-
   </body>
 </html>

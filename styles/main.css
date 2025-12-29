@@ -203,14 +203,14 @@ body {
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url("../images/hero-bg-min.jpg");
+    url("../images/header-1600-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  /* background-size: 1600px; */
 }
 .hero .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -919,19 +919,16 @@ body {
   .filters-list .button {
     margin-top: 15px;
   }
-.products-container{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
   /* footer */
   .footer-columns {
     flex-direction: column;
   }
-
 }
 
 /* mobile + tablet */
@@ -955,7 +952,7 @@ body {
     gap: 20px;
   }
   .subscribe-email {
-    width: 450px;
+    max-width: 450px;
   }
   .subscribe-button {
     margin-left: auto;
@@ -976,7 +973,7 @@ body {
   }
   /* main */
   .team-member img {
-    width: 354px;
+    max-width: 354px;
     height: auto;
   }
   .team {
@@ -995,10 +992,10 @@ body {
   .filters-list {
     margin-bottom: 30px;
   }
-      .product {
+  .product {
     max-width: calc((100% - 60px) / 2);
     /* 90 а не 60 тому що у останнього елементу є відступи справа */
-    }
+  }
   /* footer */
   .footer-columns {
     justify-content: space-between;
@@ -1083,13 +1080,11 @@ body {
     max-width: 354px;
   }
   /* portfolio page */
-
-  }
-  .filters-list {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
+}
+.filters-list {
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 /* desktop */
 @media screen and (min-width: 1200px) {
@@ -1147,10 +1142,10 @@ body {
   }
 
   /* portfolio page */
-    .product {
+  .product {
     max-width: calc((100% - 90px) / 3);
     /* 90 а не 60 тому що у останнього елементу є відступи справа */
-    }
+  }
   .filters-list {
     margin-bottom: 50px;
   }
@@ -1165,7 +1160,81 @@ body {
     text-align: left;
   }
   .subscribe-email {
-    width: 358px;
+    max-width: 358px;
+  }
+}
+
+/* IMAGES */
+/* mobile */
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        0,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/header-480-min.jpg");
+      background-size:480px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          0,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/header-480@2x-min.jpg");
+    }
+  }
+}
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        0,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/header-768-min.jpg");
+      background-size:768px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero {
+    background-image: linear-gradient(
+        0,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/header-768@2x-min.jpg");
+  }
+  }
+}
+/* desktop */
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        0,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/header-1600-min.jpg");
+      background-size:1600px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero {
+    background-image: linear-gradient(
+        0,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/header-1600@2x-min.jpg");
+  }
   }
 }
 
