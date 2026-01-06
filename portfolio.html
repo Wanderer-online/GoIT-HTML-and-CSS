@@ -22,45 +22,43 @@
   <body>
     <!--  -->
     <header class="primary-header">
-      <div class="container primary-header-wrapper">
+      <div class="container primary-header__wrapper">
         <div class="logo">
-          <a href="./" class="logo-text link"
-            ><span class="logo-text-part">Web</span>Studio</a
+          <a href="./" class="logo__text link"
+            ><span class="logo__text-part">Web</span>Studio</a
           >
         </div>
 
         <div class="menu-wrapper" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="list header-list-wrapper">
-              <li class="header-list-item">
-                <a href="./" class="navigation-link link">Студія</a>
+              <li class="header-list-wrapper__item">
+                <a href="./" class="navigation__link link">Студія</a>
               </li>
-              <li class="header-list-item">
-                <a
-                  href="./portfolio.html"
-                  class="navigation-link link-active link"
+              <li class="header-list-wrapper__item">
+                <a href="./portfolio.html" class="navigation__link navigation__link--active link"
                   >Портфоліо</a
                 >
               </li>
-              <li class="header-list-item">
-                <a href="" class="navigation-link link">Контакти</a>
+              <li class="header-list-wrapper__item">
+                <a href="" class="navigation__link link">Контакти</a>
               </li>
             </ul>
           </nav>
 
           <ul class="list support">
-            <li class="header-list-item">
+            <li class="header-list-wrapper__item">
               <a href="mailto:info@devstudio.com" class="support-link">
-                <svg width="16" height="12" class="svg-icon">
+                <svg width="16" height="12" class="svg-icon support-link__icon">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
 
-            <li class="header-list-item">
+            <li class="header-list-wrapper__item">
               <a href="tel:+380961111111" class="support-link link phone">
-                <svg width="10" height="16" class="svg-icon">
+                <svg width="10" height="16" class="svg-icon support-link__icon">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -68,17 +66,17 @@
             </li>
           </ul>
           <ul class="header-menu-social list">
-            <li class="header-list-item">
-              <a href="" class="link header-social-link">Instagram</a>
+            <li class="header-menu-social__item">
+              <a href="" class="link">Instagram</a>
             </li>
-            <li class="header-list-item">
-              <a href="" class="link header-social-link">Twitter</a>
+            <li class="header-menu-social__item">
+              <a href="" class="link">Twitter</a>
             </li>
-            <li class="header-list-item">
-              <a href="" class="link header-social-link">Facebook</a>
+            <li class="header-menu-social__item">
+              <a href="" class="link">Facebook</a>
             </li>
-            <li class="header-list-item">
-              <a href="" class="link header-social-link">LinkedIn</a>
+            <li class="header-menu-social__item">
+              <a href="" class="link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -92,11 +90,11 @@
           <svg width="40" height="40" class="svg-icon">
             <use
               href="./images/symbol-defs.svg#icon-menu"
-              class="icon-menu"
+              class="mobile-menu-button__icon-menu"
             ></use>
             <use
               href="./images/symbol-defs.svg#icon-menu-close"
-              class="icon-menu-close"
+              class="mobile-menu-button__icon-menu-close"
             ></use>
           </svg>
         </button>
@@ -108,11 +106,11 @@
         <div class="container">
           <h2 class="visually-hidden">Фільтри</h2>
           <ul class="list filters-list">
-            <li><button type="button" class="button">Усі</button></li>
-            <li><button type="button" class="button">Веб-сайти</button></li>
-            <li><button type="button" class="button">Додатки</button></li>
-            <li><button type="button" class="button">Дизайн</button></li>
-            <li><button type="button" class="button">Маркетинг</button></li>
+            <li><button type="button" class="button filters-list__filter-button">Усі</button></li>
+            <li><button type="button" class="button filters-list__filter-button">Веб-сайти</button></li>
+            <li><button type="button" class="button filters-list__filter-button">Додатки</button></li>
+            <li><button type="button" class="button filters-list__filter-button">Дизайн</button></li>
+            <li><button type="button" class="button filters-list__filter-button">Маркетинг</button></li>
           </ul>
         </div>
 
@@ -120,7 +118,7 @@
           <ul class="list products-container">
             <li class="product ">
               <a href="">
-                <div class="product-image-wrapper">
+                <div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -140,10 +138,11 @@
                       src="./images/products/product-0-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Технокряк"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,15 +151,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Технокряк</h3>
-                  <p class="product-type">Веб-сайт</p>
+                <div class="product__info">
+                  <h3 class="product__title">Технокряк</h3>
+                  <p class="product__type">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -180,10 +179,11 @@
                       src="./images/products/product-1-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Постер New Orlean vs Golden Star"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -192,17 +192,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">
+                <div class="product__info">
+                  <h3 class="product__title">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="product-type">Дизайн</p>
+                  <p class="product__type">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -222,10 +222,11 @@
                       src="./images/products/product-2-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Ресторан Seafood"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -234,15 +235,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Ресторан Seafood</h3>
-                  <p class="product-type">Додаток</p>
+                <div class="product__info">
+                  <h3 class="product__title">Ресторан Seafood</h3>
+                  <p class="product__type">Додаток</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -262,10 +263,11 @@
                       src="./images/products/product-3-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Проєкт Prime"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -274,15 +276,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Проєкт Prime</h3>
-                  <p class="product-type">Маркетинг</p>
+                <div class="product__info">
+                  <h3 class="product__title">Проєкт Prime</h3>
+                  <p class="product__type">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -302,10 +304,11 @@
                       src="./images/products/product-4-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Проєкт Boxes"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -314,15 +317,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Проєкт Boxes</h3>
-                  <p class="product-type">Додаток</p>
+                <div class="product__info">
+                  <h3 class="product__title">Проєкт Boxes</h3>
+                  <p class="product__type">Додаток</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -342,10 +345,11 @@
                       src="./images/products/product-5-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Inspiration has no Borders"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -354,15 +358,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Inspiration has no Borders</h3>
-                  <p class="product-type">Веб-сайт</p>
+                <div class="product__info">
+                  <h3 class="product__title">Inspiration has no Borders</h3>
+                  <p class="product__type">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -382,10 +386,11 @@
                       src="./images/products/product-6-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Видання Limited Edition"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -394,15 +399,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Видання Limited Edition</h3>
-                  <p class="product-type">Дизайн</p>
+                <div class="product__info">
+                  <h3 class="product__title">Видання Limited Edition</h3>
+                  <p class="product__type">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -422,10 +427,11 @@
                       src="./images/products/product-7-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Проєкт LAB"
+                      class="product__image"
                     />
                   </picture>
 
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -434,15 +440,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Проєкт LAB</h3>
-                  <p class="product-type">Маркетинг</p>
+                <div class="product__info">
+                  <h3 class="product__title">Проєкт LAB</h3>
+                  <p class="product__type">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="product flex-list-item">
               <a href=""
-                ><div class="product-image-wrapper">
+                ><div class="product__image-wrapper">
                   <picture>
                     <source
                       media="(max-width: 767px)"
@@ -462,9 +468,10 @@
                       src="./images/products/product-8-min.jpg"
                       sizes="(min-width: 1200px) 33.333vw, (min-width: 480px) 50vw, 100vw"
                       alt="Growing Business"
+                      class="product__image"
                     />
                   </picture>
-                  <div class="product-description">
+                  <div class="product__description">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -473,9 +480,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="product-info">
-                  <h3 class="product-title">Growing Business</h3>
-                  <p class="product-type">Додаток</p>
+                <div class="product__info">
+                  <h3 class="product__title">Growing Business</h3>
+                  <p class="product__type">Додаток</p>
                 </div></a
               >
             </li>
@@ -487,39 +494,39 @@
     <footer class="footer">
       <div class="container">
         <ul class="list footer-columns">
-          <li class="footer-column">
+          <li class="footer-columns__column">
             <div class="logo">
-              <a href="./" class="logo-text link"
-                ><span class="logo-text-part">Web</span>Studio</a
+              <a href="./" class="logo__text link footer__logo-text"
+                ><span class="logo__text-part">Web</span>Studio</a
               >
             </div>
             <address class="footer-address">
               <ul class="list">
-                <li>
+                <li class="footer-address__item">
                   <a
                     href="https://maps.app.goo.gl/yUVDSzYmyYtK6nQ5A"
                     target="_blank"
                     rel="noreferrer noopener"
-                    class="link"
+                    class="link footer-address__link"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li>
-                  <a href="mailto:info@devstudio.com" class="link"
+                <li class="footer-address__item">
+                  <a href="mailto:info@devstudio.com" class="link footer-address__link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
-                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                <li class="footer-address__item">
+                  <a href="tel:+380961111111" class="link footer-address__link">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </li>
-          <li class="footer-column">
-            <h3 class="footer-title">Приєднуйтесь</h3>
+          <li class="footer-columns__column">
+            <h3 class="footer-column-title">Приєднуйтесь</h3>
             <ul class="social list">
               <li>
-                <a href="" class="social-item" alt="Instagram"
+                <a href="" class="social__item" alt="Instagram"
                   ><svg width="20" height="20" class="svg-icon">
                     <use
                       href="./images/symbol-defs.svg#icon-instagram"
@@ -527,7 +534,7 @@
                 ></a>
               </li>
               <li>
-                <a href="" class="social-item" alt="Instagram"
+                <a href="" class="social__item" alt="Instagram"
                   ><svg width="20" height="20" class="svg-icon">
                     <use
                       href="./images/symbol-defs.svg#icon-twitter"
@@ -535,7 +542,7 @@
                 ></a>
               </li>
               <li>
-                <a href="" class="social-item" alt="Instagram"
+                <a href="" class="social__item" alt="Instagram"
                   ><svg width="20" height="20" class="svg-icon">
                     <use
                       href="./images/symbol-defs.svg#icon-facebook"
@@ -543,7 +550,7 @@
                 ></a>
               </li>
               <li>
-                <a href="" class="social-item" alt="Instagram"
+                <a href="" class="social__item" alt="Instagram"
                   ><svg width="20" height="20" class="svg-icon">
                     <use
                       href="./images/symbol-defs.svg#icon-linkedin"
@@ -552,24 +559,24 @@
               </li>
             </ul>
           </li>
-          <li class="footer-column">
-            <h3 class="footer-title">Підпишіться на розсилку</h3>
+          <li class="footer-columns__column">
+            <h3 class="footer-column-title">Підпишіться на розсилку</h3>
             <form class="subscribe">
               <input
                 type="email"
                 name="email"
                 id="subscribe-email"
-                class="subscribe-email"
+                class="subscribe__email"
                 placeholder=" "
                 title="your_email@mail.com"
                 required
               />
-              <label for="subscribe-email" class="subscribe-label"
+              <label for="subscribe-email" class="subscribe__label"
                 >E-mail</label
               >
               <button
                 type="submit"
-                class="button primary-button subscribe-button"
+                class="button primary-button subscribe__button"
               >
                 Підписатися
                 <svg width="24" height="24" class="svg-icon">
@@ -581,81 +588,6 @@
         </ul>
       </div>
     </footer>
-    <!--  -->
-    <div class="modal modal-hidden" data-modal>
-      <div class="modal-window-area">
-        <button class="close-button" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <form action="" class="modal-content">
-          <strong class="modal-callout"
-            >Залиште свої дані, ми вам передзвонимо</strong
-          >
-          <ul class="list modal-inputs">
-            <li>
-              <label class="modal-field">
-                <span class="modal-label">Ім'я</span>
-                <input type="text" name="name" class="modal-input" required />
-                <svg class="modal-icon svg-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-person"></use>
-                </svg>
-              </label>
-            </li>
-            <li>
-              <label class="modal-field">
-                <span class="modal-label"> Телефон</span>
-                <input type="tel" name="phone" class="modal-input" required />
-                <svg class="modal-icon svg-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-              </label>
-            </li>
-            <li>
-              <label class="modal-field">
-                <span class="modal-label">Пошта</span>
-                <input type="email" name="email" class="modal-input" required />
-                <svg class="modal-icon svg-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-email"></use>
-                </svg>
-              </label>
-            </li>
-            <li>
-              <label class="modal-label">Коментар</label>
-              <textarea
-                name="message"
-                class="modal-input text-area"
-                placeholder="Введіть текст"
-                rows="5"
-                spellcheck="true"
-              ></textarea>
-            </li>
-          </ul>
-
-          <label class="modal-check-label">
-            <input
-              type="checkbox"
-              name="consent"
-              class="modal-checkbox visually-hidden"
-              value="true"
-              required
-            />
-            <svg class="check-icon svg-icon" width="16" height="15">
-              <use href="./images/symbol-defs.svg#icon-check"></use>
-            </svg>
-            Погоджуюся з розсилкою та приймаю&nbsp;
-            <a href="" class="decorated-link">Умови договору</a></label
-          >
-
-          <button type="submit" class="button primary-button submit-button">
-            Відправити
-          </button>
-        </form>
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
     <script src="./js/form-to-console.js"></script>
     <script src="./js/menu.js"></script>
   </body>

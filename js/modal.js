@@ -10,7 +10,7 @@
 
   function toggleModal() {
 
-    refs.modal.classList.toggle('modal-hidden');
+    refs.modal.classList.toggle('modal--hidden');
   }
 
 })();
