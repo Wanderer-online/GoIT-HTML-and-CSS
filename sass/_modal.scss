@@ -1,0 +1,206 @@
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  opacity: 1;
+  visibility: visible;
+  transition: transform var(--trs-duration) var(--trs-timing-function),
+    opacity var(--trs-duration) var(--trs-timing-function),
+    visibility var(--trs-duration) var(--trs-timing-function);
+
+  background-color: rgb(0, 0, 0, 20%);
+}
+.modal__window-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%) scale(1);
+
+  visibility: visible;
+  pointer-events: all;
+  transition: transform var(--trs-duration) var(--trs-timing-function)
+      var(--trs-duration),
+    visibility var(--trs-duration) var(--trs-timing-function);
+
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal--hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal--hidden .modal__window-area {
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal__close-button {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+
+  transition-duration: var(--trs-duration);
+  transition-timing-function: var(--trs-timing-function);
+  transition-property: background-color;
+}
+.modal__close-icon {
+  fill: currentColor;
+  display: block;
+  margin: 0;
+}
+.modal__close-button:hover,
+.modal__close-button:focus {
+  background-color: var(--button-active-color);
+  color: var(--white);
+}
+.modal__content {
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.modal__callout {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03rem;
+}
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  text-align: left;
+
+  margin: 12px 0 0 0;
+}
+
+.modal-field,
+.modal-field__input {
+  display: block;
+  width: 100%;
+}
+
+.modal textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.submit-button {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-field__input {
+  font-size: 16px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: outline var(--trs-timing-function) var(--trs-duration),
+    border-color var(--trs-timing-function) var(--trs-duration);
+}
+
+.modal-field__input:focus,
+.modal-field__input:active {
+  border-color: var(--main-active-color);
+  outline-color: var(--main-active-color);
+}
+.text-area {
+  padding: 12px 16px;
+}
+.text-area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+}
+
+.modal-field {
+  position: relative;
+}
+.modal-field__label {
+  color: var(--secondary-text-color);
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.modal-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+
+  transition: fill var(--trs-timing-function) var(--trs-duration);
+}
+
+.modal-field__input:focus ~ .modal-field__icon,
+.modal-field__input:active ~ .modal-field__icon {
+  color: var(--main-active-color);
+}
+
+.modal__check-label {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  color: var(--secondary-text-color);
+  margin-top: 20px;
+}
+.check-icon {
+  display: inline-block;
+  margin-right: 5px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  cursor: pointer;
+
+  background-color: transparent;
+
+  outline: 1px solid transparent;
+
+  fill: transparent;
+
+  transition: fill var(--trs-timing-function) var(--trs-duration),
+    background-color var(--trs-timing-function) var(--trs-duration),
+    outline var(--trs-timing-function) var(--trs-duration),
+    border-color var(--trs-timing-function) var(--trs-duration);
+}
+
+.modal-checkbox {
+  visibility: visible;
+  bottom: 0;
+  left: 0.5rem;
+}
+
+.modal-checkbox:checked + .check-icon {
+  fill: #fff;
+  background-color: var(--main-active-color);
+  border: none;
+}
+
+.modal-checkbox:focus ~ .check-icon,
+.modal-checkbox:active ~ .check-icon {
+  outline-color: var(--main-active-color);
+  border-color: var(--main-active-color);
+}

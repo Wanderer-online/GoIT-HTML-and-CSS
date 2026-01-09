@@ -1,0 +1,104 @@
+/* ------- footer styles  ------- */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column-title {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.footer__logo-text {
+  color: var(--white);
+}
+.footer-address {
+  padding-top: 20px;
+}
+.footer-address__link {
+  line-height: 1.71;
+  color: var(--white);
+  opacity: 60%;
+  font-style: normal;
+
+  transition-duration: var(--trs-duration);
+  transition-timing-function: var(--trs-timing-function);
+  transition-property: opacity;
+}
+.footer-address__link:hover,
+.footer-address__link:active,
+.footer-address__link:focus {
+  opacity: 100%;
+}
+
+.footer .social {
+  margin-top: 20px;
+}
+.footer .social__item {
+  background-color: rgb(255, 255, 255, 10%);
+  color: var(--white);
+}
+
+.subscribe {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+
+  position: relative;
+}
+.subscribe__button {
+  padding-left: 28px;
+  padding-right: 28px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.subscribe__label {
+  pointer-events: none;
+  position: absolute;
+  transform: translate(1.06rem, 110%);
+
+  /* left: 1.06rem; */
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: transform var(--trs-timing-function) var(--trs-duration);
+}
+.subscribe__email {
+  padding: 16px;
+  font-size: 16px;
+
+  background-color: transparent;
+  color: var(--white);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: outline var(--trs-timing-function) var(--trs-duration),
+    border-color var(--trs-timing-function) var(--trs-duration);
+}
+
+.subscribe__email:focus,
+.subscribe__email:active {
+  border-color: var(--main-active-color);
+  outline-color: var(--main-active-color);
+}
+
+.subscribe__email:focus + .subscribe__label,
+.subscribe__email:active + .subscribe__label,
+.subscribe__email:not(:placeholder-shown) + .subscribe__label {
+  transform: translate(0, -110%);
+
+  font-size: 12px;
+}
