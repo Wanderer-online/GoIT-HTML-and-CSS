@@ -9,22 +9,22 @@
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
-  background-image: linear-gradient(
-      0,
+  background-image: linear-gradient(0,
       rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
+      rgba(47, 48, 58, 0.4) 100%),
     url("../images/header-1600-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: 1600px; */
 }
+
 .hero .container {
   padding-top: 118px;
   padding-bottom: 118px;
   padding-left: 60px;
   padding-right: 60px;
 }
+
 .hero__title {
   color: var(--white);
   letter-spacing: 0.06rem;
@@ -33,6 +33,7 @@
   font-size: 26px;
   font-weight: 900;
 }
+
 .button {
   box-sizing: border-box;
   border-radius: 4px;
@@ -50,6 +51,7 @@
   transition-timing-function: var(--trs-timing-function);
   transition-property: background-color, color, box-shadow;
 }
+
 .button:active,
 .button:hover,
 .button:focus {
@@ -57,15 +59,18 @@
   color: var(--white);
   cursor: pointer;
 }
+
 .hero .primary-button {
   margin-top: 32px;
 }
+
 .primary-button {
   background-color: var(--main-active-color);
   color: var(--white);
   line-height: 1.87;
   font-weight: 700;
 }
+
 .primary-button:active,
 .primary-button:hover,
 .primary-button:focus {
@@ -76,10 +81,12 @@
   font-weight: 700;
   margin-bottom: 50px;
 }
+
 .svg-icon {
   fill: currentColor;
   /* stroke: currentColor; */
 }
+
 .support-link__icon {
   margin-right: 10px;
 }
@@ -90,10 +97,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .advantage__icon {
   height: 120px;
   background-color: var(--secondary-background-color);
 }
+
 .advantage__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -101,6 +110,7 @@
   margin: 30px 0 0 0;
   text-align: left;
 }
+
 .advantage__description {
   color: var(--secondary-text-color);
   line-height: 1.71;
@@ -117,9 +127,11 @@
 .what-we-do {
   display: none;
 }
+
 .do {
   position: relative;
 }
+
 .do__image-label {
   position: absolute;
   width: 100%;
@@ -153,6 +165,7 @@
   font-weight: 500;
   font-size: 16px;
 }
+
 .team-member__job {
   margin-top: 10px;
   color: var(--secondary-text-color);
@@ -160,12 +173,12 @@
 
 .social {
   display: flex;
-  margin-right: -10px;
+
   justify-content: center;
 }
-.social > li {
-  margin: 0 10px 0 0;
-  line-height: 0;
+
+.social>li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social__item {
@@ -174,12 +187,14 @@
   display: block;
   box-sizing: border-box;
   font-size: 1px;
+  line-height: 0;
   color: var(--secondary-border-color);
 
   transition-duration: var(--trs-duration);
   transition-timing-function: var(--trs-timing-function);
   transition-property: background-color, color;
 }
+
 .social__item:hover,
 .footer .social__item:hover,
 .social__item:active,
@@ -193,6 +208,7 @@
 .team-member__social {
   margin-top: 16px;
 }
+
 .team-member__info {
   padding: 30px 30px 24px 30px;
 }
@@ -202,6 +218,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .client-logo {
   width: 170px;
   height: 92px;

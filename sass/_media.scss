@@ -100,11 +100,9 @@
   }
   .filters-list {
     margin-bottom: 40px;
-    margin-top: -15px;
+    gap: 15px 8px;
   }
-  .filters-list__filter-button {
-    margin-top: 15px;
-  }
+
 
   /* footer */
   .footer-columns {
@@ -144,7 +142,8 @@
   }
   /* modal */
   .modal__window-area {
-    width: 450px;
+    max-width: 450px;
+    width: 95vw;
     height: 609px;
   }
 }
