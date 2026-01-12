@@ -898,8 +898,10 @@ body {
     width: 100%;
     height: auto;
   }
-  .filters-list {
+  .filters {
     margin-bottom: 40px;
+  }
+  .filters-list {
     gap: 15px 8px;
   }
   /* footer */
@@ -969,7 +971,7 @@ body {
     max-width: 354px;
   }
   /* portfolio page */
-  .filters-list {
+  .filters {
     margin-bottom: 30px;
   }
   .products-container {
@@ -1122,7 +1124,7 @@ body {
   .products-container {
     grid-template-columns: auto auto auto;
   }
-  .filters-list {
+  .filters {
     margin-bottom: 50px;
   }
   .filters-list__filter-button {
